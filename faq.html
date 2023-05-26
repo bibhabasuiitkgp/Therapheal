@@ -42,8 +42,14 @@
     <!-- Style customizer (Remove these two lines please) -->
     <link rel="stylesheet" href="https://templates.iqonic.design/qwilo/html/qwilo/#" data-style="styles">
     <link rel="stylesheet" href="https://templates.iqonic.design/qwilo/html/qwilo/css/style-customizer.css" />
+    <link rel="stylesheet" href="static1/css/faqs.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120846200-1"></script>
+<script>
+    const Collapse = (e) => {
+        console.log(e)
+    };
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -101,7 +107,7 @@
                             <ul class="menu-logo">
                                 <li>
                                     <a href="https://templates.iqonic.design/qwilo/html/qwilo/index.html">
-                                        <img id="logo_dark" src="https://templates.iqonic.design/qwilo/html/qwilo/images/logo-black.png" alt="logo">
+                                        <img id="logo_dark" src="https://i0.wp.com/therapheal.in/wp-content/uploads/2022/10/cropped-TherapHeal-Final.png?resize=300%2C156&ssl=1" alt="logo">
                                     </a>
                                 </li>
                             </ul>
@@ -862,19 +868,19 @@
     </div>
     <!-- /search END -->
         <!--======= Breadcrumb Left With BG Image =======-->
-        <section class="overview-block-ptb iq-over-black-70 jarallax iq-breadcrumb3 text-left iq-font-white" style="background-image: url('images/bg/03.jpg'); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+        <section class="overview-block-ptb iq-over-black-70 jarallax iq-breadcrumb3 text-left iq-font-white" style="color: green' ;">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="iq-mb-0">
-                            <h2 class="iq-font-white iq-tw-6">Faq's</h2>
+                            <h1 class="iq-font-white iq-tw-6">Frequently Asked Questions</h1>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <nav aria-label="breadcrumb" class="text-right">
-                            <ol class="breadcrumb">
+                        <nav aria-label="breadcrumb" class="text-right" style="text-align: right;">
+                            <ol class="breadcrumb" style="left: 45rem;top:-3rem; ">
                                 <li class="breadcrumb-item"><a href="https://templates.iqonic.design/qwilo/html/qwilo/home-1.html"><i class="ion-android-home"></i> Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Faq's 1</li>
+                                <li class="breadcrumb-item active" aria-current="page">FAQs</li>
                             </ol>
                         </nav>
                     </div>
@@ -888,25 +894,24 @@
             <!--================================
             Faq's -->
             <section class="overview-block-ptb iq-accordion arrow">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                        
-                        <div id="accordion" role="tablist">
-
-
-                            <div class="card">
+                <div class="container" width="500px" style="margin: auto;">
+                    <!-- <div class="row"> -->
+                        <div class="col-md-15" width="500px">
+                            <img src="https://i0.wp.com/therapheal.in/wp-content/uploads/2022/10/%E0%A6%A4%E0%A7%87%E0%A6%9C%E0%A6%B8-%E0%A6%98%E0%A7%8B%E0%A6%B7-1.png?resize=1536%2C653&ssl=1" width="900px" style="display: flex; overflow: hidden; object-fit: cover; margin: auto;">
+                            <br>
+                            <div id="accordion" role="tablist">
+                            <div class="card" onclick="(e) => {Collapse(e)}">
                                 <div class="card-header" role="tab" id="headingOne">
                                     <div>
-                                        <a data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseOne" aria-expanded="true" aria-controls="collapseOne">Lorem Ipsum is simply dummy text of the printing? </a>
+                                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="toggleContent('collapseOne')"> What do Clinical psychologists do? </a>
                                     </div>
                                 </div>
-                                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body iq-mt-10">
-                                       <div class="row">
-                                            <div class="col-sm-4"><img alt="" class="img-fluid" src="https://templates.iqonic.design/qwilo/html/qwilo/images/about-us/04.jpg"></div>
-                                            <div class="col-sm-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                        </div>
+                                       <!-- <div class="row"> -->
+                                            <!-- <div class="col-sm-4"><img alt="" class="img-fluid"></div> -->
+                                            <div class="col-sm-8" style="text-align-last: justify;">Clinical psychologists are specialists in the field of mental healthcare. They are uniquely qualified to assess, diagnose and treat individuals experiencing psychological distress and mental illnesses. They are highly trained professionals that deliver treatments which are backed by evidence. In India, the specification for clinical psychologists is completion of MPhil in clinical psychology delineated and recognised by the Rehabilitation Council of India. Clinical psychologists are licensed professionals. They specialize in assessment and treatment of a range of concerns including depression, anxiety, behavioural problems, neurological disorders, substance abuse and the like. However their roles are not restricted to treating mental disorders. They are moderators of change, this could be in any domain of human behaviour and can also be for the purpose of facilitating insight into behavioural patterns and help individuals overcome personal weaknesses.</div>
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -916,17 +921,22 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingTwo">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Ipsum is simply dummy text of the printing?</a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="toggleContent('collapseTwo')"> Do I need a psychologists? </a>
                                     </div>
                                 </div>
                                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body iq-mt-20">
-                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <p>A psychologist aims at providing a safe, accepting and non-judgemental space for clients to gain a better understanding of themselves and process various life experiences.<br>You can decide to book an appointment if you wish to process or cope with:</p>
                                         <ul class="listing-mark iq-mtb-30 iq-tw-6 iq-font-black">
-                                            <li>Simply dummy text of the Lorem Ipsum is printing and type setting.</li>
-                                            <li>Dummy text of the printing and typesetting industry.</li>
-                                            <li>Text of the printing and typesetting industry Lorem Ipsum has been.</li>
-                                            <li>Ipsum has been the industry's standard dummy since the 1500s,</li>
+                                            <li>Difficult emotions</li>
+                                            <li>Traumatic life experiences</li>
+                                            <li>Work-place stress</li>
+                                            <li>Challenges in interpersonal relationship</li>
+                                            <li>Certain thoughts or behaviour that keeps you worried</li>
+                                            <li>Academic pressure</li>
+                                            <li>Loss or grief</li>
+                                            <li>Dependence on substance</li>
+                                            <li>Relationship issues</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -937,15 +947,15 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingThree">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseThree" aria-expanded="false" aria-controls="collapseThree">Simply dummy text of the printing and typesetting industry? </a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" onclick="toggleContent('collapseThree')"> How does psychotheraphy work? </a>
                                     </div>
                                 </div>
                                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body iq-mt-20">
-                                         <div class="row">
-                                            <div class="col-sm-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                             <div class="col-sm-4"><img alt="" class="img-fluid" src="https://templates.iqonic.design/qwilo/html/qwilo/images/about-us/04.jpg"></div>
-                                        </div>
+                                         <!-- <div class="row"> -->
+                                            <div class="col-sm-8">Psychotherapy is a collaborative treatment based on the relationship between an individual and a psychologist. It offers a supportive environment that allows you to talk openly with someone who is objective, understanding, and non-judgemental. You and your psychologist will work together to identify and modify the thought and behaviour patterns that are keeping you from feeling your best and effectively developing skills to resolve problems.</div>
+                                             <!-- <div class="col-sm-4"><img alt="" class="img-fluid"></div> -->
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -953,12 +963,12 @@
                              <div class="card">
                                 <div class="card-header" role="tab" id="headingFour">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseFour" aria-expanded="false" aria-controls="collapseFour">Simply dummy text of the printing and typesetting industry?</a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" onclick="toggleContent('collapseFour')"> How long does each therapy session take? </a>
                                     </div>
                                 </div>
                                 <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
                                     <div class="card-body">
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        Each session is held for 50 minutes.
                                     </div>
                                 </div>
                             </div>
@@ -967,12 +977,12 @@
                          <div class="card">
                                 <div class="card-header" role="tab" id="headingFive">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseFive" aria-expanded="false" aria-controls="collapseFive">Ipsum is simply dummy text of the printing?</a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" onclick="toggleContent('collapseFive')"> Do you have a cancellation Policy? </a>
                                     </div>
                                 </div>
                                 <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
                                     <div class="card-body">
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        Yes. To cancel or reschedule please contact admin@therapheal.com at least 24 hours in advance or full session charges apply. Any cancellation/missed appointment will not be refunded
                                     </div>
                                 </div>
                             </div>
@@ -981,12 +991,12 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingSix">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseSix" aria-expanded="false" aria-controls="collapseSix">Lorem Ipsum is simply dummy text of the printing? </a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" onclick="toggleContent('collapseSix')"> Will my health insurance cover therapy? </a>
                                     </div>
                                 </div>
                                 <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
                                     <div class="card-body">
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        No. Our therapy sessions are not covered by health insurances.
                                     </div>
                                 </div>
                             </div>
@@ -995,12 +1005,12 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingSeven">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Ipsum is simply dummy text of the printing?</a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" onclick="toggleContent('collapseSeven')"> How does psychotherapy help you? </a>
                                     </div>
                                 </div>
                                 <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
                                     <div class="card-body">
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        Psychotherapy aims to help a person understand their feelings and equip them to face new challenges, both in the present and the future. It's a space to be your authentic self without fear of judgement. Psychotherapy can help when depression, low self-esteem, addiction, bereavement, or other factors leave a person feeling overwhelmed.
                                     </div>
                                 </div>
                             </div>
@@ -1009,72 +1019,37 @@
                              <div class="card">
                                 <div class="card-header" role="tab" id="headingEight">
                                     <div>
-                                        <a class="collapsed" data-toggle="collapse" href="https://templates.iqonic.design/qwilo/html/qwilo/#collapseEight" aria-expanded="false" aria-controls="collapseEight">Simply dummy text of the printing and typesetting industry?</a>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" onclick="toggleContent('collapseEight')"> What happens in a therapy session? </a>
                                     </div>
                                 </div>
                                 <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
                                     <div class="card-body">
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        A therapy session is unique to each individual based on their diverse life experiences. It's a safe place to explore your presenting concern with gentleness and curiosity and unlearning behaviour that cause distress. The session helps you understand your feelings and emotions and how it might be influencing your day-to-day mood, thoughts and behaviour.  There are many types of therapies, each with its own approach and rationale. The type of psychotherapy that’s right for you depends on your individual life situation, presenting concern, and your therapist’s preferred approach.
                                     </div>
                                 </div>
                             </div>
 
-
-
-
-
-
-                         </div>      
-                         
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="green-bg iq-pall-20">
-                                <h4 class="iq-tw-6 iq-font-black small-title white">Questions?</h4>
-                                <div class="iq-font-white">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
-                                <div class="iq-mt-20 read-more white green">
-                                    <a href="https://templates.iqonic.design/qwilo/html/qwilo/#"><img src="https://templates.iqonic.design/qwilo/html/qwilo/images/about-us/icon.png" alt="">
-                                        <span class="iq-font-yellow iq-pl-10 iq-tw-6 iq-lead"> +0123 456 789</span></a>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingEight">
+                                    <div>
+                                        <a class="collapsed" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" onclick="toggleContent('collapseNine')"> How do I schedule an appointment? </a>
                                     </div>
                                 </div>
-                                <div class="grey-bg iq-mt-30 iq-pall-20">
-                                    <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                                    <ul class="listing-mark iq-mtb-30 iq-tw-6 iq-font-black">
-                                        <li>Simply dummy text of the Lorem Ipsum is printing and type setting.</li>
-                                        <li>Dummy text of the printing and typesetting industry.</li>
-                                        <li>Text of the printing and typesetting industry Lorem Ipsum has been.</li>
-                                        <li>Ipsum has been the industry's standard dummy since the 1500s,</li>
-                                    </ul>
+                                <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+                                    <div class="card-body">
+                                        You can get in touch by
+                                        <ul class="listing-mark iq-mtb-30 iq-tw-6 iq-font-black">
+                                            <li>filling the appointment booking form</li>
+                                            <li>calling or sending a Whatsapp text to +91 7980343700/6289 801 890 (10 am - 6:30 pm IST) </li>
+                                            <li>dropping a mail to admin@therapheal.com</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            
-                            
+                         </div>        
                         </div>
                     </div>
                 </section>
-                <!--================================
-                Faq's -->
-            <!--=================================
-              Action Box -->
-              <div class="iq-action-blog green-bg particles-bg iq-ptb-40">
-                <canvas id="canvas"></canvas>
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-lg-10 col-md-9 col-sm-8  iq-font-white">
-                      <h2 class="iq-font-white iq-fw-4 iq-pb-10">Qwilo is the Most <strong class="iq-font-black">Creative</strong> Template</h2>
-                      <div>Lorem Ipsum is simply dummy text ever sincehar the 1500s, when an unknownshil printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 text-right"><a href="https://templates.iqonic.design/qwilo/html/qwilo/#" class="button white grey iq-re-4-mt30 iq-mr-0">Purchase Now</a> </div>
-                  </div>
-                </div>
-              </div>
-              <!--=================================
-              Action Box -->
-            </div>
-            <!--=================================
-            Main Content -->
-            <!--=================================
-            Footer -->
             <footer class="iq-footer2 iq-over-black-80 iq-bg jarallax" style="background-image: url('images/bg/22.jpg'); background-position: left center;">
               <div class="footer-top">
                 <div class="container">
